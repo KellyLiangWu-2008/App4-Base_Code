@@ -20,7 +20,7 @@ Brief Description of Goal of Code:
 The goal of this code is to calculate whether a mole is benign or malignant based on a series of questions. These questions are based on the ABCDE rule used to identify signs of melanoma.
  
 Known Issues:
-This code shouldn't be relied on to diagnose moles. 
+This code shouldn't be relied on to diagnose moles. When an answer is skipped, the code is unable to calculate a percentage.  
 Ignore this error message if you see it using the javaScript console: Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
 
 References:
@@ -30,9 +30,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 <head> 
 	<title>Benign or Malignant</title>  <!-- Displays the title for the website -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="stylesheet" href="w3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Allows the app to be scaled on different devices-->
+	<meta name="apple-mobile-web-app-capable" content="yes"> <!-- Allows the app to work on mobile phones-->
+	<link rel="stylesheet" href="w3.css"> 
 	<link rel="stylesheet" href="w3-colors-flat.css">
 </head> 
 
@@ -103,7 +103,7 @@ img, object{ /* Resizes the image according to the device the app is used on */
 
   <a href="#one" class="w3-btn w3-orange w3-round"> Get Started </a> <!-- Button to allow the app to scroll to the next page when clicked -->
 
-  <p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+  <p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p> <!--Displays disclaimer on first page of app-->
  	
   <p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 </div>
