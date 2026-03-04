@@ -146,5 +146,21 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		</div>
 </div>
 
+<div class="page" id="four"> <!-- Creates a new page and assigns its id as four so that when the button on page 3 is clicked it moves to this page -->
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 4</h1>
+	</div>
+	
+	<div id="content4" class="w3-container">
+		<p>Has the mole been changing (shape, color, or size) over time?</p>
+
+		<a href="#resultsPage"  onclick="malignantAdd();" class="w3-btn w3-green"> Yes </a> <!-- Button with the answer choice Yes. When clicked, it scrolls to the next page and adds 1 to the malignant count tracker with the malignantAdd() function in Java script -->
+
+		<a href="#resultsPage"  onclick="benignAdd();" class="w3-btn w3-red"> No </a> <!-- Button with the answer choice No. When clicked, it scrolls to the next page and adds 1 to the benign count tracker with the benignAdd() function in Java script -->
+
+		</div>
+</div>
+
+
 </body>
 </html>
