@@ -70,7 +70,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
      margin: 0em;
 }
 
-.page {
+.page { /* Controls the page layout */
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -81,12 +81,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     background-color: hsl(0,0%,100%);
 }
 
-.page:target {
+.page:target { /* Allows for the scrolling between pages of the app */
     left: 0vw;
     z-index: 1;
 }
 
-img, object{
+img, object{ /* Resizes the image according to the device the app is used on */
     max-height:90%;
     max-width:90%;
 }
