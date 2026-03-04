@@ -61,10 +61,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			"Benign: " + benignPercent + "%"; // Displays the final results for benign mole percentage calculation
 
 	}
-</script>	
+</script>	<!-- This concludes the Java script code -->
 
 
-<!-- THIS STYLE CODE HELPS MAKE YOUR APP LOOK GOOD. PROBABLY DONT MESS WITH IT -->
+<!-- CSS that codes for the visual layout and style of the app -->
 <style>	
 .body {
      margin: 0em;
@@ -110,13 +110,13 @@ img, object{
 
 <div class="page" id="one"> <!-- Creates a new page and assigns its id as one so that when the Get Started button is clicked it moves to this page -->
 	<div id="header1" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
+		<h1>Question 1</h1> <!-- Header for the page -->
 	</div>
 
     <div id="content1" class="w3-container">
-    <p>Is your mole symmetrical or asymmetrical?</p>    
+    <p>Is your mole symmetrical or asymmetrical?</p> <!-- Displays the question for the page -->    
 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvWjr-u8BljzaVw9pmvAJhf38pacIouZH3wg&s" alt="Reference picture of asymmetrical vs symmetrical mole">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvWjr-u8BljzaVw9pmvAJhf38pacIouZH3wg&s" alt="Reference picture of asymmetrical vs symmetrical mole"> <!-- Adds picture of example of symmetrical mole and asymmetrical mole -->
 
 		<a href="#two"  onclick="benignAdd();" class="w3-btn w3-green"> Symmetrical </a> <!-- Button with the answer choice Symmetrical. When clicked, it scrolls to the next page and adds 1 to the benign count tracker with the benignAdd() function in Java script -->
 
@@ -127,11 +127,11 @@ img, object{
 
 <div class="page" id="two"> <!-- Creates a new page and assigns its id as two so that when the button on page 1 is clicked it moves to this page -->
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 2</h1>
+		<h1>Question 2</h1> <!-- Header for the page -->
 	</div>
 	
 	<div id="content2" class="w3-container">
-		<p>Is the mole different colors or shades?</p>
+		<p>Is the mole different colors or shades?</p> <!-- Displays the question for the page -->  
 
 		<a href="#three"  onclick="malignantAdd();" class="w3-btn w3-green"> Yes </a> <!-- Button with the answer choice yes. When clicked, it scrolls to the next page and adds 1 to the malignant count tracker with the malignantAdd() function in Java script -->
 
@@ -142,11 +142,11 @@ img, object{
 
 <div class="page" id="three"> <!-- Creates a new page and assigns its id as three so that when the button on page 2 is clicked it moves to this page -->
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 3</h1>
+		<h1>Question 3</h1> <!-- Header for the page -->
 	</div>
 	
 	<div id="content3" class="w3-container">
-		<p>Is the mole smaller than 6 mm?</p> 
+		<p>Is the mole smaller than 6 mm?</p> <!-- Displays the question for the page -->  
 
 		<a href="#four"  onclick="benignAdd();" class="w3-btn w3-green"> Yes </a> <!-- Button with the answer choice yes. When clicked, it scrolls to the next page and adds 1 to the benign count tracker with the benignAdd() function in Java script -->
 
@@ -156,11 +156,11 @@ img, object{
 
 <div class="page" id="four"> <!-- Creates a new page and assigns its id as four so that when the button on page 3 is clicked it moves to this page -->
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 4</h1>
+		<h1>Question 4</h1> <!-- Header for the page -->
 	</div>
 	
 	<div id="content4" class="w3-container">
-		<p>Has the mole been changing (shape, color, or size) over time?</p>
+		<p>Has the mole been changing (shape, color, or size) over time?</p> <!-- Displays the question for the page -->  
 
 		<a href="#resultsPage"  onclick="malignantAdd();" class="w3-btn w3-green"> Yes </a> <!-- Button with the answer choice Yes. When clicked, it scrolls to the next page and adds 1 to the malignant count tracker with the malignantAdd() function in Java script -->
 
@@ -171,7 +171,7 @@ img, object{
 
 <div class="page" id="resultsPage"> <!-- Creates a new page and assigns its id as resultsPage so that when the button on page 4 is clicked it moves to this page -->
 	<div class="w3-container w3-flat-carrot">
-		<h1>Your Results</h1>
+		<h1>Your Results</h1> <!-- Header for the page -->
 	</div>
 	
 	<div class="w3-container"> 
