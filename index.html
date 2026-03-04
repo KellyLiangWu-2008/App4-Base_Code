@@ -37,9 +37,30 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </head> 
 
 <script>
+  var malignant_count = 0; // This variable keeps track of the malignant count and starts at zero
+  var benign_count = 0; // This variable keeps track of the benign count and starts at zero
 
-	//YOUR JAVASCRIPT GOES HERE
 
+  function malignantAdd(){ // This function is for when an answer for malignant is chosen
+    malignant_count = malignant_count + 1; // This stores responses for malignant and adds 1 every time a symptom for malignant mole is chosen
+
+  }
+
+  function benignAdd(){ // This function is for when an answer for benign is chosen
+    benign_count = benign_count + 1; // This stores responses for benign and adds 1 every time a symptom for benign mole is chosen
+
+  }
+
+	function results(){ // This function displays and calculates the results for the results page
+		var total = malignant_count + benign_count; // This calculates the total for both malignant and benign count in order to find the MalignantPercent and BenignPercent
+		var malignantPercent = (malignant_count/total) * 100 // This outputs the result of the survey by calculating the percentage of the answers that supports the diagnosis of malignant mole
+		var benignPercent = (benign_count/total) * 100 // This outputs the result of the survey by calculating the percentage of the answers that supports the diagnosis of benign mole
+
+		document.getElementById("results").innerHTML = 
+			"Malignant: " + malignantPercent + "%<br>" + // Displays the final results for malignant mole percentage calculation
+			"Benign: " + benignPercent + "%"; // Displays the final results for benign mole percentage calculation
+
+	}
 </script>	
 
 
